@@ -89,9 +89,100 @@ const styles = StyleSheet.create({
 # รายการ Props ที่ใช้ในการปรับแต่ง SliderBox:
 <table>
   <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
+    <th>Props</th>
+    <th>Value Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>ImageComponent</td>
+    <td>Image component, default as Image</td>
+    <td>default value is React-native Image, if you use third-party library like FastImage use this property</td>
+  </tr>
+  <tr>
+    <td>images</td>
+    <td>Array of image path(or url) as string</td>
+    <td>Set array of images path- these paths can contain http url link or local images path using require('./pathOfImage')</td>
+  </tr>
+  <tr>
+    <td>onCurrentImagePressed</td>
+    <td>handler function callback</td>
+    <td>callback for get pressed image index (index start from 0)</td>
+  </tr>
+  <tr>
+    <td>currentImageEmitter</td>
+    <td>handler function callback</td>
+    <td>callback for get current image index (index start from 0)</td>
+  </tr>
+  <tr>
+    <td>disableOnPress</td>
+    <td>boolean</td>
+    <td>if present, then onCurrentImagePressed will be disabled</td>
+  </tr>
+  <tr>
+    <td>sliderBoxHeight</td>
+    <td>int value</td>
+    <td>default value = 200, you can change height of image slider box</td>
+  </tr>
+  <tr>
+    <td>parentWidth</td>
+    <td>int</td>
+    <td>default = screen.width ; in advance mode, if parent is smaller, you can change it. best practice is use onLayout handler in parent component or screen.</td>
+  </tr>
+  <tr>
+    <td>dotColor</td>
+    <td>color string code</td>
+    <td>change color of paging dot</td>
+  </tr>
+  <tr>
+    <td>inactiveDotColor</td>
+    <td>color string code</td>
+    <td>change color of paging dot</td>
+  </tr>
+  <tr>
+    <td>dotColor</td>
+    <td>color string code</td>
+    <td>change color of inactive paging dot</td>
+  </tr>
+  <tr>
+    <td>dotStyle</td>
+    <td>style object</td>
+    <td>default style is : {width: 10,height: 10,borderRadius: 5,marginHorizontal: 0,padding: 0,margin: 0,} change style of paging dots if you want</td>
+  </tr>
+  <tr>
+    <td>autoplay</td>
+    <td>bool value</td>
+    <td>default = false</td>
+  </tr>
+  <tr>
+    <td>circleLoop</td>
+    <td>boolean - attribute</td>
+    <td>if set, when user swiped to last image circularly return to the first image again</td>
+  </tr>
+  <tr>
+    <td>paginationBoxStyle</td>
+    <td>object,default values use lib style</td>
+    <td>customize pagination box</td>
+  </tr>
+  <tr>
+    <td>resizeMethod</td>
+    <td>string</td>
+    <td>default is resize</td>
+  </tr>
+  <tr>
+    <td>resizeMode</td>
+    <td>string</td>
+    <td>default is cover</td>
+  </tr>
+  <tr>
+    <td>ImageComponentStyle</td>
+    <td>object</td>
+    <td>{} style object for ImageComponent</td>
+  </tr>
+  <tr>
+    <td>imageLoadingColor</td>
+    <td>string</td>
+    <td>default is #E91E63 , image loading indicator color</td>
   </tr>
 </table>
 
+more details ->https://www.npmjs.com/package/react-native-image-slider-box
