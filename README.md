@@ -1,8 +1,8 @@
 # ImageSliderBox
 
-#Props	Value Type	Description
-#ImageComponent	Image component, default as Image	default value is React-native Image, if you use third-party library like FastImage use this property
-#images	Array of image path(or url) as string	Set array of images path- these paths can contain http url link or local images path using require('./pathOfImage')
+Props	Value Type	Description
+ImageComponent	Image component, default as Image	default value is React-native Image, if you use third-party library like FastImage use this property
+images	Array of image path(or url) as string	Set array of images path- these paths can contain http url link or local images path using require('./pathOfImage')
 #onCurrentImagePressed	handler function callback	callback for get pressed image index (index start from 0)
 #currentImageEmitter	handler function callback	callback for get current image index (index start from 0)
 #disableOnPress	boolean	if present, then onCurrentImagePressed will be disabled
