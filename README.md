@@ -7,6 +7,7 @@
 npm i react-native-fast-image\
 yarn add react-native-fast-image\
 
+วิธีการใช้
 
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
