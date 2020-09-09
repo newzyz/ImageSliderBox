@@ -1,5 +1,5 @@
 # Installation
-## 1.ติดตั้ง library เข้ามาใน Project \
+## 1.ติดตั้ง library เข้ามาใน Project 
   npm i react-native-image-slider-box\
   หรือ\
   yarn add react-native-image-slider-box
@@ -86,5 +86,12 @@ const styles = StyleSheet.create({
   
 });
 
-
+# รายการ Props ที่ใช้ในการปรับแต่ง SliderBox:
+<table>
+  <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+  </tr>
+</table>
 
