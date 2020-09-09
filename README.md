@@ -4,16 +4,17 @@
   หรือ\
   yarn add react-native-image-slider-box\
 ## 2.(ทางเลือก) : ถ้าต้องการใช้ image library จากที่อื่น เช่น FastImage เป็นต้น\
-npm i react-native-fast-image\
-yarn add react-native-fast-image\
+  npm i react-native-fast-image\
+  หรือ\
+  yarn add react-native-fast-image\
 
 # วิธีการใช้
-//ทำการ import react-native-image-slide
 
 import React, {Component} from 'react';
 
 import {StyleSheet, Text, View} from 'react-native';
 
+//ทำการ import react-native-image-slide
 import {SliderBox} from 'react-native-image-slider-box';
 
 export default class App extends Component {
