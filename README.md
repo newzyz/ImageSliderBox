@@ -1,21 +1,25 @@
 # Installation
-##1.ติดตั้ง library \
+## 1.ติดตั้ง library เข้ามาใน Project \
   npm i react-native-image-slider-box\
   หรือ\
   yarn add react-native-image-slider-box\
-##2.(ทางเลือก) : ถ้าต้องการใช้ image library จากที่อื่น เช่น FastImage เป็นต้น\
+## 2.(ทางเลือก) : ถ้าต้องการใช้ image library จากที่อื่น เช่น FastImage เป็นต้น\
 npm i react-native-fast-image\
 yarn add react-native-fast-image\
 
-วิธีการใช้
+# วิธีการใช้
+//ทำการ import react-native-image-slide
 
 import React, {Component} from 'react';
+
 import {StyleSheet, Text, View} from 'react-native';
+
 import {SliderBox} from 'react-native-image-slider-box';
 
 export default class App extends Component {
 
   constructor(props) {
+  
     super(props);
     this.state = {
       //เก็บรูปไว้ใน state สามารถเก็บได้ทั้ง url หรือ folder
@@ -64,13 +68,19 @@ export default class App extends Component {
 //กำหนดสไตล์ของ Dot
 
 const styles = StyleSheet.create({
+
   container: {
+  
     flex: 1,
+    
   },
+  
   dotStyle: {
+  
     width: 10,
     height: 10,
     borderRadius: 10,
+    
   },
   
 });
