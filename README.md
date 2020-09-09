@@ -11,10 +11,10 @@ yarn add react-native-fast-image\
 
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-
 import {SliderBox} from 'react-native-image-slider-box';
 
 export default class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -28,12 +28,13 @@ export default class App extends Component {
       ],
     };
   }
-
+  
   render() {
+  
     return (
       <View style={styles.container}>
         <SliderBox
-          //images จะเลือกรูปเข้ามาใน slide box
+          //images จะเลือกรูปเข้ามาใน slide box    
           images={this.state.images}
           //onCurrentImagePressed จะ action เมื่อถูกคลิกที่รูปที่แสดงอยู่ในปัจจุบัน
           onCurrentImagePressed={(index) =>
@@ -55,9 +56,12 @@ export default class App extends Component {
           sliderBoxHeight={250}
         />
       </View>
+      
     );
   }
 }
+
+//กำหนดสไตล์ของ Dot
 
 const styles = StyleSheet.create({
   container: {
@@ -68,6 +72,7 @@ const styles = StyleSheet.create({
     height: 10,
     borderRadius: 10,
   },
+  
 });
 
 
